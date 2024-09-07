@@ -93,7 +93,7 @@ for key, value in data.items():
     st.markdown(f"<p class='custom-text'><strong>{key.replace('-', ' ').capitalize()}:</strong> {formatted_value}</p>", unsafe_allow_html=True)
 
 # Load the pre-trained model
-loaded_model = pickle.load(open('Finalized_model.pkl', 'rb'))
+loaded_model = pickle.load(open('model.pkl', 'rb'))
 
 # Make predictions using the input data
 prediction = loaded_model.predict(df)
